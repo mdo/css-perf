@@ -158,7 +158,7 @@ This is a second set of test results, averaging 10 page load times in Safari 7.0
 
 ### Safari 7.0.1
 
-|background|background-color|box-sizing|box-sizing split|attr selectors|class selectors|grid - floats|grid - inline-block|grid - table|grid - flexbox|
+|`background`|`background-color`|`box-sizing`|`box-sizing split`|`attr selectors`|`class selectors`|`grid - floats`|`grid - inline-block`|`grid - table`|`grid - flexbox`|
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 |34.8|35.7|48.3|56.3|103|92.7|155|174|129|129|
 |35.4|40.7|45.5|54.1|113|103|171|190|131|130|
@@ -175,7 +175,7 @@ This is a second set of test results, averaging 10 page load times in Safari 7.0
 
 ### Chrome 33
 
-|background|background-color|box-sizing|box-sizing split|attr selectors|class selectors|grid - floats|grid - inline-block|grid - table|grid - flexbox|
+|`background`|`background-color`|`box-sizing`|`box-sizing split`|`attr selectors`|`class selectors`|`grid - floats`|`grid - inline-block`|`grid - table`|`grid - flexbox`|
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 |54.71|98.8|115.84|118.03|296.68|239.62|399.82|492.73|297.2|302.14|
 |76.97|60.43|111.39|102.29|302.84|249.69|405.4|444.31|274.17|267.38|

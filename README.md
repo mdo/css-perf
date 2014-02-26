@@ -13,7 +13,13 @@
   - [Grid techniques](#grid-techniques)
   - [background vs background-color](#background-vs-background-color)
 - [Average test results](#average-test-results)
-
+  - [Safari 7.0.1](#safari-701)
+  - [Chrome 33](#chrome-33)
+  - [Differences between original test results](#differences-between-test-results)
+  - [Updated conclusions from averages](#updated-conclusions-from-averages)
+  - [A note on CSS performance testing](#a-note-on-css-performance-testing)
+- [Feedback](#feedback)
+- [License](#license)
 
 ## How "testing" is done
 

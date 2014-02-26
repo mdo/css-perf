@@ -152,8 +152,8 @@ This honestly blew me away because for the longest time for two reasons:
 
 ## Further tests to run
 
-- Box-sizing reset strategies
-- Multiple attribute selectors per page
+- Multiple attribute selectors per page vs multiple classes
+- Element selectors vs classes
 
 
 

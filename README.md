@@ -79,7 +79,7 @@ The problem with this test is that the **page rendering time is super inconsiste
 **Conclusion?** I have no idea.
 
 
-## Grid techniques
+### Grid techniques
 
 This test compares three CSS grid techniques: `float`s, `display: inline-block;`, and `display: table-cell;`. The test page has a few hundred columns in standard layouts, so it's a super basic set of pages. The only differences are in the actual grid CSS.
 

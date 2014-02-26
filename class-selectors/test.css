@@ -1,0 +1,11 @@
+body {
+  font: 16px/1.5 "Helvetica Neue", sans-serif;
+}
+
+.column-class {
+  float: left;
+  width: 10%;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(255,0,255,.25);
+}

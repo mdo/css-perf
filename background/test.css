@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  font: 16px/1.5 "Helvetica Neue", sans-serif;
+}
+
+.swatch {
+  float: left;
+  width: 5.555556%;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.bg-1  { background: #f80c12; }
+.bg-2  { background: #ee1100; }
+.bg-3  { background: #ff3311; }
+.bg-4  { background: #ff4422; }
+.bg-5  { background: #ff6644; }
+.bg-6  { background: #ff9933; }
+.bg-7  { background: #feae2d; }
+.bg-8  { background: #ccbb33; }
+.bg-9  { background: #d0c310; }
+.bg-10 { background: #aacc22; }
+.bg-11 { background: #69d025; }
+.bg-12 { background: #22ccaa; }
+.bg-13 { background: #12bdb9; }
+.bg-14 { background: #11aabb; }
+.bg-15 { background: #4444dd; }
+.bg-16 { background: #3311bb; }
+.bg-17 { background: #3b0cbd; }
+.bg-18 { background: #442299; }

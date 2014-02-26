@@ -9,6 +9,7 @@
 - [Attribute vs class selectors](#attribute-vs-class-selectors)
 - [Box-sizing resets](#box-sizing-resets)
 - [Grid techniques](#grid-techniques)
+- [background vs background-color](#background-vs-background-color)
 
 
 
@@ -100,6 +101,27 @@ Some background and context:
 - Tables are super impractical for grids because there is no perf gain when using `table-layout: fixed;`, a property that tells the browser to only scrape a table's first row of cells to determine *every* cell's width for super fast rendering.
 
 **Conclusion?** Floats have been CSS stable for many years, and I see no reason to move away.
+
+
+### Background vs background-color
+
+Comparison of 18 color swatches rendered 100 times on a page as small rectangles, once with `background` and once with `background-color`.
+
+| Page                                                       | Render time |
+|------------------------------------------------------------|-------------|
+| [background](http://mdo.github.io/background/)             | 44.9ms      |
+| [background-color](http://mdo.github.io/background-color/) | 87.5ms      |
+
+Rendering times were determined by loading each page in Safari 7.0.1, opening the Inspector, and reloading once. **However**, with subsequent refreshes, the render times changed, but the *difference* was basically the same every time.
+
+**That's a savings of almost 42.6ms, almost twice as fast, when using `background`** instead of `background-color`.
+
+This honestly blew me away because for the longest time for two reasons:
+
+- I usually always argue for explicitness in CSS properties, especially with backgrounds because it can adversely affect specificity down the road.
+- I thought that when a browser sees `background: #000;`, they really see `background: #000 none no-repeat top center;`. I don't have a link to a resource here, but I recall reading this somewhere.
+
+**Conclusion?** Stick to `background`, I guess. Ugh.
 
 
 ## Further tests to run

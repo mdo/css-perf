@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  font: 16px/1.5 "Helvetica Neue", sans-serif;
+}
+
+.swatch {
+  float: left;
+  width: 5.555556%;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.bg-1  { background-color: #f80c12; }
+.bg-2  { background-color: #ee1100; }
+.bg-3  { background-color: #ff3311; }
+.bg-4  { background-color: #ff4422; }
+.bg-5  { background-color: #ff6644; }
+.bg-6  { background-color: #ff9933; }
+.bg-7  { background-color: #feae2d; }
+.bg-8  { background-color: #ccbb33; }
+.bg-9  { background-color: #d0c310; }
+.bg-10 { background-color: #aacc22; }
+.bg-11 { background-color: #69d025; }
+.bg-12 { background-color: #22ccaa; }
+.bg-13 { background-color: #12bdb9; }
+.bg-14 { background-color: #11aabb; }
+.bg-15 { background-color: #4444dd; }
+.bg-16 { background-color: #3311bb; }
+.bg-17 { background-color: #3b0cbd; }
+.bg-18 { background-color: #442299; }

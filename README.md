@@ -1,6 +1,6 @@
 # css perf
 
-Screwing around with some comparisons for argument's sake. A derp in progress, and incredibly informal and unscientific, for sure.
+**css-perf** is a completely unscientific way of testing CSS performance. Most of these tests will revolve around methodologies and techniques for determining effective CSS architecture. Put another way, I want to know what works best given a particular comparison of CSS strategies.
 
 ## Tests results
 
@@ -25,6 +25,7 @@ In other words, this *super* edge case comparison of a large number of the same 
 
 ## Further tests to run
 
+- Box-sizing reset strategies
 - Multiple attribute selectors per page
 - Grids: floats vs inline-block vs table layout
 

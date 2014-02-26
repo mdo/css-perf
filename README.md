@@ -6,11 +6,13 @@
 
 ## Table of contents
 
-- [Attribute vs class selectors](#attribute-vs-class-selectors)
-- [Box-sizing resets](#box-sizing-resets)
-- [Grid techniques](#grid-techniques)
-- [background vs background-color](#background-vs-background-color)
-
+- [How "testing" is done](#how-testing-is-done)
+- [Original test results](#test-results)
+  - [Attribute vs class selectors](#attribute-vs-class-selectors)
+  - [Box-sizing resets](#box-sizing-resets)
+  - [Grid techniques](#grid-techniques)
+  - [background vs background-color](#background-vs-background-color)
+- [Averages test results](#averaged-test-results)
 
 
 ## How "testing" is done
@@ -36,7 +38,7 @@ Things worth noting about this process:
 Additional context and background information is provided in the test results sections below.
 
 
-## Tests results
+## Original test results
 
 Explanation and analysis between sample pages featuring high number of elements.
 
@@ -150,12 +152,57 @@ This honestly blew me away because for the longest time for two reasons:
 
 ---
 
-## Further tests to run
+## Average test results
 
-- Multiple attribute selectors per page vs multiple classes
-- Element selectors vs classes
+This is a second set of test results, averaging 10 page load times in Safari 7.0.1 and Chrome 33. Cache was always disabled in both browsers with Inspector open. **All times are in milliseconds.**
+
+### Safari 7.0.1
+
+|background|background-color|box-sizing|box-sizing split|attr selectors|class selectors|grid - floats|grid - inline-block|grid - table|grid - flexbox|
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+|34.8|35.7|48.3|56.3|103|92.7|155|174|129|129|
+|35.4|40.7|45.5|54.1|113|103|171|190|131|130|
+|34.4|37.2|48.1|47.5|114|89.4|167|177|148|122|
+|35.8|74.8|51.8|48.9|103|89.1|208|184|141|121|
+|51.6|39.7|46.5|64.3|106|100|165|183|147|125|
+|37.6|36|42.5|45.8|118|104|168|181|128|121|
+|33.4|44.9|88.8|68.9|113|103|179|214|141|133|
+|31.8|37.1|45.4|41.5|115|88.3|170|185|137|125|
+|31.8|38|62.3|45|110|99.4|164|177|143|135|
+|57.8|36.9|39.4|44.1|116|102|151|182|145|115|
+|||||||||||
+|38.44|42.1|51.86|51.64|111.1|97.09|169.8|184.7|139|125.6|
+
+### Chrome 33
+
+|background|background-color|box-sizing|box-sizing split|attr selectors|class selectors|grid - floats|grid - inline-block|grid - table|grid - flexbox|
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+|54.71|98.8|115.84|118.03|296.68|239.62|399.82|492.73|297.2|302.14|
+|76.97|60.43|111.39|102.29|302.84|249.69|405.4|444.31|274.17|267.38|
+|54.47|56.31|100.94|98.88|274.51|249.12|409.19|446.83|273.26|276.91|
+|55.06|56.01|105.1|104.13|277.23|243.7|409.89|451.68|267.64|274.92|
+|56.12|59.47|97.72|106.09|289.38|266.6|404.1|444.12|275.73|271.13|
+|76.37|56.68|100.32|100.2|281.62|254.81|412.51|446.36|271.66|266.55|
+|59.59|55.37|103.25|119.43|269.07|247.56|406.63|458.51|279.44|262.78|
+|55.77|59.18|105.26|102.27|270.95|244.96|405.68|473.82|270.63|266.63|
+|77.66|58.08|103.28|100.28|268.88|245.84|408.32|440.71|270.76|279.45|
+|53.73|59.21|98.98|105.21|266.24|255.96|398.81|469.13|269.87|271.98|
+|||||||||||
+|62.045|61.954|104.208|105.681|279.74|249.786|406.035|456.82|275.036|273.987|
+
+### Differences between test results
+
+The differences in times between these averages and the individual tests earlier is astonishing. Further testing—without me at the helm—is definitely needed. Here's what's different:
+
+- In the original tests (all still documented above), single page loads were used for each test. Each browser had it's cache disabled with the Inspector open during those tests.
+- In the averaged tests, the same conditions applied—cache disabled, Inspector open. Larger bumps in times can be seen, but very few like the ones I saw originally.
+- The above averages are from my second attempt at averaging. The first set (of three refreshes) produced much higher inconsistencies that matched the original tests. I cannot explain the change, save for the larger sample size.
+- Ever after this larger average test run, I still see crazy differences in numbers. One part of this can be the cache. With the cache re-enabled, the numbers vary *even more* greatly with each refresh, in Safari and Chrome.
+
+Bottom line, though? The disparity is not at huge as I saw earlier when averaged out, apparently.
 
 
+---
 
 ## Feedback
 

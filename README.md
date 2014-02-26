@@ -8,6 +8,7 @@
 
 - [Attribute vs class selectors](#attribute-vs-class-selectors)
 - [Box-sizing resets](#box-sizing-resets)
+- [Grid techniques](#grid-techniques)
 
 
 

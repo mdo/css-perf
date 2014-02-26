@@ -12,7 +12,7 @@
   - [Box-sizing resets](#box-sizing-resets)
   - [Grid techniques](#grid-techniques)
   - [background vs background-color](#background-vs-background-color)
-- [Averages test results](#averaged-test-results)
+- [Average test results](#average-test-results)
 
 
 ## How "testing" is done

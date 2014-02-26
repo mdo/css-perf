@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css-perf from @mdo</title>
+    <style>
+      html {
+        font-size: 16px;
+      }
+      @media (min-width: 600px) {
+        html {
+          font-size: 20px;
+        }
+      }
+
+      body {
+        margin: 0;
+        padding: 3rem 1rem;
+        font: 1rem/1.5 "Helvetica Neue", sans-serif;
+        color: #555;
+        text-align: center;
+        background-color: #fff;
+      }
+
+      a {
+        color: #1874cd;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #104e8b;
+      }
+
+      h1, h2, h3 {
+        margin-top: 0;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.1;
+        color: #333;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+      h1 small {
+        font-size: 80%;
+        color: #777;
+      }
+      h2 {
+        margin-top: 2rem;
+        font-size: 1.75rem;
+      }
+      p, ul {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      ul {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <h1><a href="https://github.com/mdo/css-perf">@mdo/css-perf</a></h1>
+    <p>Test pages for some super unscientific measuring of CSS performance.</p>
+    <ul>
+      <li><a href="attribute-selectors/">Attribute selectors</a></li>
+      <li><a href="class-selectors/">Class selectors</a></li>
+    </ul>
+    <ul>
+      <li><a href="background/">background</a></li>
+      <li><a href="background-color/">background-color</a></li>
+    </ul>
+    <ul>
+      <li><a href="box-sizing/">Default box-sizing reset</a></li>
+      <li><a href="box-sizing-separate/">Separate box-sizing reset</a></li>
+    </ul>
+    <ul>
+      <li><a href="grid-floats/">Floated grid system</a></li>
+      <li><a href="grid-inline-block/">Inline-block grid system</a></li>
+      <li><a href="grid-tables/">Tables grid system</a></li>
+      <li><a href="grid-flexbox/">Flexbox grid system</a></li>
+    </ul>
+
+  </body>
+</html>

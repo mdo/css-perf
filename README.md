@@ -201,6 +201,21 @@ The differences in times between these averages and the individual tests earlier
 
 Bottom line, though? The disparity is not at huge as I saw earlier when averaged out, apparently.
 
+### Updated conclusions from averages
+
+Let's revisit the conclusions I had earlier from single tests against the averages:
+
+- **Attribute vs class selectors:** Winner is still class selectors. *Only thing faster than classes is ids.*
+- **Box-sizing reset:** All together or broken apart, they're still about the same. *This sounds way saner to me.*
+- **Float techniques:** Apparently `display: table;` beats out `float`s now. *I think this is the case because we repeat the same grid examples several times, so there's less computation to do still given `table-layout: fixed;`.*
+- **Background or background-color:** Safari says `background`, Chrome says whatever—I'm in the same boat. *I still lean towards specificity here as a more maintainable property in larger code bases.*
+
+So, the averages match some of the earlier expectations. That last one is the most important since [it blew up on Twitter](https://twitter.com/mdo/status/438584284241084418). The difference is clearly not as stark when averaged out.
+
+### A note on CSS performance testing
+
+**These kind of tests are cheats and always going to be somewhat inaccurate from the real world.** They involve duplicating series of the same elements over and over to stress test a page. That's *useful*, but that's not everything. In the future, a more accurate real world example page is needed.
+
 
 ---
 

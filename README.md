@@ -4,6 +4,13 @@
 
 
 
+## Table of contents
+
+- [Attribute vs class selectors](#attribute-vs-class-selectors)
+- [Box-sizing resets](#box-sizing-resets)
+
+
+
 ## Tests results
 
 Explanation and analysis between sample pages featuring high number of elements.

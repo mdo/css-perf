@@ -54,10 +54,10 @@ Explanation and analysis between sample pages featuring high number of elements.
 
 This tests the rendering performance of the same **page of 5,000 elements with the same class**. An attribute selector looks something like `[class^="column-"] { ... }`. A class selector looks like `.column-class { ... }`. **At first glance, the class selector page renders 43ms faster (a 9.3% improvement) in Safari 7.0.1.**
 
-| Page                                                            | Safari 7.0.1 | Chrome 33 |
-|-----------------------------------------------------------------|--------------|-----------|
-| [Attribute selectors](http://mdo.github.io/attribute-selectors/)| 485ms        | 260.17ms  |
-| [Class selectors](http://mdo.github.io/class-selectors/)        | 442ms        | 244.37ms  |
+| Page                                                                     | Safari 7.0.1 | Chrome 33 |
+|--------------------------------------------------------------------------|--------------|-----------|
+| [Attribute selectors](http://mdo.github.io/css-perf/attribute-selectors/)| 485ms        | 260.17ms  |
+| [Class selectors](http://mdo.github.io/css-perf/class-selectors/)        | 442ms        | 244.37ms  |
 
 The time spent recalculating styles is neglible I think, but the difference here *is* interesting. Consider the following context for this test:
 
@@ -103,10 +103,10 @@ I've had a hunch that this is slower for one reason or another than say splittin
 
 And as it turns out, it is slower in the first run. **Splitting the selector up saves `8.2ms` (a 16% improvement) in page render time** as reported by a single load in Safari 7.0.1.
 
-| Page                                                                      | Safari 7.0.1 | Chrome 33 |
-|---------------------------------------------------------------------------|--------------|-----------|
-| [Standard box-sizing reset](http://mdo.github.io/box-sizing-reset/)       | 55.5ms       | 108.61ms  |
-| [Split box-sizing reset](http://mdo.github.io/box-sizing-reset-separate/) | 47.3ms       | 98.87ms   |
+| Page                                                                               | Safari 7.0.1 | Chrome 33 |
+|------------------------------------------------------------------------------------|--------------|-----------|
+| [Standard box-sizing reset](http://mdo.github.io/css-perf/box-sizing-reset/)       | 55.5ms       | 108.61ms  |
+| [Split box-sizing reset](http://mdo.github.iocss-perf//box-sizing-reset-separate/) | 47.3ms       | 98.87ms   |
 
 The problem with this test is that the **page rendering time is super inconsistent.** The first test numbers are above. Subsequent refreshes yield wildly different numbers in both Safari 7.0.1 and Chrome 33. Sometimes the render time is doubled or the improvement reversed between the two options.
 
@@ -118,12 +118,12 @@ The problem with this test is that the **page rendering time is super inconsiste
 
 This test compares three CSS grid techniques: `float`s, `display: inline-block;`, and `display: table-cell;`. The test page has a few hundred columns in standard layouts, so it's a super basic set of pages. The only differences are in the actual grid CSS.
 
-| Page                                                    | Safari 7.0.1 | Chrome 33 |
-|---------------------------------------------------------|--------------|-----------|
-| [Floats](http://mdo.github.io/grid-floats/)             | 246ms        | 424.94ms  |
-| [Inline-block](http://mdo.github.io/grid-inline-block/) | 306ms        | 439.19ms  |
-| [Flexbox](http://mdo.github.io/grid-flexbox/)           | 252ms        | 262.41ms  |
-| [Tables](http://mdo.github.io/grid-tables/)             | 271ms        | 265.53ms  |
+| Page                                                             | Safari 7.0.1 | Chrome 33 |
+|------------------------------------------------------------------|--------------|-----------|
+| [Floats](http://mdo.github.io/css-perf/grid-floats/)             | 246ms        | 424.94ms  |
+| [Inline-block](http://mdo.github.io/css-perf/grid-inline-block/) | 306ms        | 439.19ms  |
+| [Flexbox](http://mdo.github.io/css-perf/grid-flexbox/)           | 252ms        | 262.41ms  |
+| [Tables](http://mdo.github.io/css-perf/grid-tables/)             | 271ms        | 265.53ms  |
 
 Some background and context:
 
@@ -140,10 +140,10 @@ Some background and context:
 
 Comparison of 18 color swatches rendered 100 times on a page as small rectangles, once with `background` and once with `background-color`.
 
-| Page                                                       | Safari 7.0.1 | Chrome 33 |
-|------------------------------------------------------------|--------------|-----------|
-| [background](http://mdo.github.io/background/)             | 44.9ms       | 34.45ms   |
-| [background-color](http://mdo.github.io/background-color/) | 87.5ms       | 69.34ms   |
+| Page                                                                | Safari 7.0.1 | Chrome 33 |
+|---------------------------------------------------------------------|--------------|-----------|
+| [background](http://mdo.github.io/css-perf/background/)             | 44.9ms       | 34.45ms   |
+| [background-color](http://mdo.github.io/css-perf/background-color/) | 87.5ms       | 69.34ms   |
 
 While these numbers are from a single page reload, with subsequent refreshes the render times changed, but the *percent difference* was basically the same every time.
 

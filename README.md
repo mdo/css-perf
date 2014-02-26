@@ -112,7 +112,7 @@ Comparison of 18 color swatches rendered 100 times on a page as small rectangles
 | [background](http://mdo.github.io/background/)             | 44.9ms      |
 | [background-color](http://mdo.github.io/background-color/) | 87.5ms      |
 
-Rendering times were determined by loading each page in Safari 7.0.1, opening the Inspector, and reloading once. **However**, with subsequent refreshes, the render times changed, but the *difference* was basically the same every time.
+Rendering times were determined by loading each page in Safari 7.0.1, opening the Inspector, and reloading once. **However**, with subsequent refreshes, the render times changed, but the *percent difference* was basically the same every time.
 
 **That's a savings of almost 42.6ms, almost twice as fast, when using `background`** instead of `background-color`.
 

@@ -17,6 +17,7 @@
 
 Explanation and analysis between sample pages featuring high number of elements.
 
+---
 
 ### Attribute vs class selectors
 
@@ -37,6 +38,7 @@ In other words, this *super* edge case comparison of a large number of the same 
 
 **Conclusion?** Based on this test, my personal experience with Twitter, Bootstrap, and GitHub, and the feedback of others, I'd stick to classes for widely used components.
 
+---
 
 ### Box-sizing resets
 
@@ -79,6 +81,7 @@ The problem with this test is that the **page rendering time is super inconsiste
 
 **Conclusion?** I have no idea.
 
+---
 
 ### Grid techniques
 
@@ -102,6 +105,7 @@ Some background and context:
 
 **Conclusion?** Floats have been CSS stable for many years, and I see no reason to move away.
 
+---
 
 ### Background vs background-color
 
@@ -123,6 +127,7 @@ This honestly blew me away because for the longest time for two reasons:
 
 **Conclusion?** Stick to `background`, I guess. Ugh.
 
+---
 
 ## Further tests to run
 

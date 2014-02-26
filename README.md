@@ -78,12 +78,34 @@ The problem with this test is that the **page rendering time is super inconsiste
 **Conclusion?** I have no idea.
 
 
+## Grid techniques
+
+This test compares three CSS grid techniques: `float`s, `display: inline-block;`, and `display: table-cell;`. The test page has a few hundred columns in standard layouts, so it's a super basic set of pages. The only differences are in the actual grid CSS.
+
+| Page                                                    | Render time |
+|---------------------------------------------------------|-------------|
+| [Floats](http://mdo.github.io/grid-floats/)             | 246ms       |
+| [Inline-block](http://mdo.github.io/grid-inline-block/) | 306ms       |
+| [Flexbox](http://mdo.github.io/grid-flexbox/)           | 252ms       |
+| [Tables](http://mdo.github.io/grid-tables/)             | 271ms       |
+
+Rendering times were determined by loading each page in Safari 7.0.1, opening the Inspector, and reloading once. The winner? Floats, by a lot.
+
+Some background and context:
+
+- Use floats is super straighfoward—float the columns, clear them with a row. I honestly don't see why folks *don't* love floated grid systems more.
+- `inline-block` grids require some `white-space: nowrap;` or `font-size: 0;` hackery to collapse whitespace. Why bother resetting something at such a high level in your page?
+- Flexbox is interesting, and this test doesn't make full use of available flexbox properties for the columns.
+- Tables are super impractical for grids because there is no perf gain when using `table-layout: fixed;`, a property that tells the browser to only scrape a table's first row of cells to determine *every* cell's width for super fast rendering.
+
+**Conclusion?** Floats have been CSS stable for many years, and I see no reason to move away.
+
 
 ## Further tests to run
 
 - [x] Box-sizing reset strategies
 - [ ] Multiple attribute selectors per page
-- [ ] Grids: floats vs inline-block vs table layout
+- [x] Grids: floats vs inline-block vs flexbox vs tables
 
 
 

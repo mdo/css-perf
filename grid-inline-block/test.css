@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 2rem 0;
+  font: 16px/1.5 "Helvetica Neue", sans-serif;
+}
+
+
+/*
+ * Grid system
+ */
+
+/* Reset the box-sizing for padding-within-width rendering */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  max-width: 940px;
+  padding-left:  10px;
+  padding-right: 10px;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+.row {
+  margin-left:  -10px;
+  margin-right: -10px;
+  font-size: 0;
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.col {
+  display: inline-block;
+  padding-left:  10px;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.col-1 { width: 8.333333%; }
+.col-2 { width: 16.666667%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.333333%; }
+.col-5 { width: 41.666667%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.333333%; }
+.col-8 { width: 66.666667%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.333333%; }
+.col-11 { width: 91.666667%; }
+.col-12 { width: 100%; }
+
+
+/*
+ * Red columns for easy viewing
+ */
+
+.row-example {
+  margin-bottom: 1rem;
+}
+.row-example .col {
+  line-height: 3rem;
+  text-align: center;
+  color: #333;
+  background-color: rgba(255,0,0,.15);
+}
+.row-example .col:nth-child(odd) {
+  background-color: rgba(255,0,0,.3);
+}

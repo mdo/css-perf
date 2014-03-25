@@ -106,7 +106,7 @@ And as it turns out, it is slower in the first run. **Splitting the selector up 
 | Page                                                                               | Safari 7.0.1 | Chrome 33 |
 |------------------------------------------------------------------------------------|--------------|-----------|
 | [Standard box-sizing reset](http://mdo.github.io/css-perf/box-sizing-reset/)       | 55.5ms       | 108.61ms  |
-| [Split box-sizing reset](http://mdo.github.iocss-perf//box-sizing-reset-separate/) | 47.3ms       | 98.87ms   |
+| [Split box-sizing reset](http://mdo.github.io/css-perf/box-sizing-reset-separate/) | 47.3ms       | 98.87ms   |
 
 The problem with this test is that the **page rendering time is super inconsistent.** The first test numbers are above. Subsequent refreshes yield wildly different numbers in both Safari 7.0.1 and Chrome 33. Sometimes the render time is doubled or the improvement reversed between the two options.
 

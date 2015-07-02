@@ -1,5 +1,7 @@
 # css perf
 
+**This project is archived and will not be maintained or updated.**
+
 **css-perf** is a completely unscientific way of testing CSS performance. Most of these tests will revolve around methodologies and techniques for determining effective CSS architecture. Put another way, I want to know what works best given a particular comparison of CSS strategies.
 
 

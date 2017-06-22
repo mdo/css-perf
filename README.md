@@ -39,7 +39,7 @@ Things worth noting about this process:
 * None of this is super accurate.
 * These are *local* page load times via `file:///` URLs.
 * Nothing is averaged. This is a single page load.
-* The only platform tested is OS X (curently 10.9.1).
+* The only platform tested is OS X (currently 10.9.1).
 * I'm no developer tools expert (in any browser).
 * Firefox's dev tools are horrible to use and I haven't included them in testing for now.
 
